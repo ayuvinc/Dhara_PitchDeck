@@ -129,6 +129,32 @@ section.lt .snav-count{color:var(--mu);}
   #rotate{display:flex!important;}
 }
 #rotate{display:none;position:fixed;inset:0;background:var(--n);z-index:99999;flex-direction:column;align-items:center;justify-content:center;gap:20px;color:var(--w);text-align:center;padding:40px;}
+
+/* S13 AI Horizons — scoped from v2 S10 */
+#s13{background:#0A1628!important;color:#FAFAFF!important;}
+#s13 .nav{position:absolute;top:0;left:0;right:0;height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 80px;border-bottom:1px solid rgba(255,255,255,0.07);z-index:50;}
+#s13 .nav-right{font-size:18px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.2);}
+#s13 .body{position:absolute!important;top:80px;left:0;right:0;bottom:64px;padding:48px 80px 16px;display:flex;flex-direction:column;gap:0;}
+#s13 .sec-hdr{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:20px;border-bottom:1.5px solid rgba(255,255,255,0.1);margin-bottom:20px;}
+#s13 .slide-label{font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#2AAFA8;}
+#s13 .hgrid{display:grid!important;grid-template-columns:1fr 1fr 1fr 1fr;gap:18px;flex:1;margin-top:0;}
+#s13 .hc{border:1.5px solid rgba(255,255,255,0.1);border-radius:20px;padding:36px;cursor:pointer;transition:all .25s;display:flex;flex-direction:column;gap:10px;}
+#s13 .hc:hover,#s13 .hc.on{border-color:#2AAFA8;background:rgba(42,175,168,0.07);}
+#s13 .h-when{font-size:14px;letter-spacing:0.1em;font-weight:700;color:rgba(255,255,255,0.3);text-transform:uppercase;}
+#s13 .h-ttl{font-family:Georgia,serif;font-size:26px;color:#FAFAFF;line-height:1.25;margin-top:4px;}
+#s13 .h-sub{font-size:18px;color:rgba(255,255,255,0.38);line-height:1.55;}
+#s13 .live-badge{display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:700;color:#2AAFA8;}
+#s13 .ld{width:8px;height:8px;border-radius:50%;background:#2AAFA8;animation:pulse3 2s infinite;}
+#s13 #h-detail{background:rgba(42,175,168,0.08);border:1.5px solid rgba(42,175,168,0.2);border-radius:16px;padding:24px 36px;margin-top:16px;min-height:80px;transition:all 0.3s;}
+#s13 .gate{margin-top:16px;padding:18px 28px;border:1px solid rgba(42,175,168,0.2);border-radius:12px;background:rgba(42,175,168,0.05);display:flex;align-items:flex-start;gap:14px;font-size:18px;color:rgba(255,255,255,0.55);line-height:1.5;}
+#s13 .snav{position:absolute;bottom:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;border-top:1px solid rgba(255,255,255,0.06);background:rgba(0,0,0,0.12);z-index:50;}
+#s13 .snav-btn{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:700;padding:8px 20px;border-radius:40px;cursor:pointer;border:1.5px solid rgba(255,255,255,0.1);background:rgba(255,255,255,0.03);color:rgba(255,255,255,0.45);transition:all .2s;text-transform:uppercase;}
+#s13 .snav-btn:hover{color:#2AAFA8;border-color:rgba(42,175,168,0.4);background:rgba(42,175,168,0.08);}
+#s13 .snav-count{font-size:15px;font-weight:600;color:rgba(255,255,255,0.28);}
+
+/* S19 simulator preset/year buttons fix */
+#s19 .preset-btn{border-color:#6A8099!important;color:#1A2B4A!important;background:white!important;}
+#s19 .preset-btn.on{background:#2AAFA8!important;color:white!important;border-color:#2AAFA8!important;}
 </style>
 <style id="v2-scoped">
 
@@ -165,13 +191,13 @@ section.lt .snav-count{color:var(--mu);}
 #s10 .body{position:absolute!important;top:80px;left:0;right:0;bottom:64px;padding:48px 80px 16px;display:flex;flex-direction:column;}
 #s10 .sec-hdr{display:flex;align-items:flex-end;justify-content:space-between;padding-bottom:20px;border-bottom:1.5px solid rgba(42,175,168,0.2);margin-bottom:24px;}
 #s10 .slide-label{font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:#2AAFA8;}
-#s10 .phases{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;flex:1;}
-#s10 .ph{background:white;border-radius:18px;padding:36px 32px;box-shadow:0 4px 18px rgba(0,0,0,0.07);border-top:4px solid #2AAFA8;display:flex;flex-direction:column;}
-#s10 .phn{font-size:72px;font-weight:900;color:#EDE8DF;line-height:1;}
-#s10 .phpd{font-size:13px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#6A8099;margin-bottom:4px;}
-#s10 .phname{font-size:32px;font-weight:800;color:#1A2B4A;margin-bottom:4px;}
-#s10 .phrange{font-size:28px;font-weight:800;color:#2AAFA8;}
-#s10 .phd{font-size:17px;color:#6A8099;margin-top:10px;line-height:1.6;}
+#s10 .phases{display:grid!important;grid-template-columns:1fr 1fr 1fr;gap:28px;flex:1;margin-top:36px;}
+#s10 .ph{background:white;border-radius:22px;padding:48px 44px;display:flex;flex-direction:column;gap:16px;position:relative;overflow:hidden;box-shadow:0 4px 22px rgba(0,0,0,0.07);border-top:4px solid #2AAFA8;}
+#s10 .phn{font-size:88px;font-weight:900;color:#EDE8DF;line-height:1;}
+#s10 .phpd{font-size:15px;letter-spacing:0.13em;color:#6A8099;text-transform:uppercase;font-weight:700;}
+#s10 .phname{font-size:38px;font-weight:800;color:#1A2B4A;}
+#s10 .phrange{font-size:44px;font-weight:800;color:#2AAFA8;line-height:1.1;}
+#s10 .phd{font-size:22px;color:#6A8099;line-height:1.6;}
 #s10 .wedge{font-size:19px;color:#6A8099;font-style:italic;padding:14px 20px;background:rgba(42,175,168,0.06);border-radius:12px;margin-top:16px;border:1px solid rgba(42,175,168,0.15);}
 #s10 .snav{position:absolute;bottom:0;left:0;right:0;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 56px;border-top:1px solid rgba(42,175,168,0.15);z-index:50;}
 #s10 .snav-btn{display:inline-flex;align-items:center;gap:6px;font-size:16px;font-weight:700;padding:8px 20px;border-radius:40px;cursor:pointer;border:1.5px solid rgba(42,175,168,0.2);background:rgba(42,175,168,0.05);color:#6A8099;transition:all .2s;text-transform:uppercase;}
@@ -205,6 +231,10 @@ section.lt .snav-count{color:var(--mu);}
 #s11b .snav-count{font-size:15px;font-weight:600;color:#6A8099;}
 @keyframes pulse3{0%,100%{opacity:1;}50%{opacity:0.3;}}
 
+
+/* S9 ARPC calculator button highlight */
+#s9 .cb.on { background: rgba(42,175,168,0.14) !important; color: #2AAFA8 !important; border-color: rgba(42,175,168,0.4) !important; font-weight: 700; }
+#s9 .cy.on { background: rgba(42,175,168,0.14) !important; color: #2AAFA8 !important; border-color: rgba(42,175,168,0.4) !important; font-weight: 700; }
 </style>
 <style>
 #fs-btn{position:fixed;top:18px;right:18px;z-index:9999;background:rgba(10,22,40,0.88);border:1.5px solid rgba(42,175,168,0.4);color:#2AAFA8;font-size:14px;font-weight:700;padding:8px 18px;border-radius:40px;cursor:pointer;transition:all .2s;backdrop-filter:blur(8px);}
@@ -249,7 +279,7 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
   <div style="position:absolute;bottom:80px;left:88px;right:88px;display:flex;justify-content:space-between;align-items:flex-end;">
     <div>
       <div style="font-size:26px;font-weight:700;">Aditya Kaushal</div>
-      <div style="font-size:18px;color:rgba(255,255,255,0.26);margin-top:4px;">Founder & CEO · aditya@ayuvinc.com · +91-9599963641</div>
+      <div style="font-size:18px;color:rgba(255,255,255,0.26);margin-top:4px;">Founder & CEO · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb9a9f928f829abb9a828e8d929598d5989496">[email&#160;protected]</a> · +91-9599963641</div>
     </div>
     <div style="background:rgba(42,175,168,0.1);border:1.5px solid rgba(42,175,168,0.28);border-radius:16px;padding:26px 48px;text-align:right;">
       <div style="font-family:var(--sf);font-size:60px;color:var(--w);line-height:1;">USD 1M</div>
@@ -410,19 +440,20 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
       <div class="card-lt" style="border-top:4px solid var(--t);">
         <div style="font-size:32px;margin-bottom:10px;">₹</div>
         <div class="h4 tx">UPI Infrastructure</div>
-        <div style="font-size:19px;color:var(--mu);margin:8px 0 14px;line-height:1.6;">India digitised payments before healthcare using the same collect-first model. Dhara uses the same architecture — patient pays before pharmacy settles. Zero working capital cost.</div>
+        <div style="font-size:19px;color:var(--mu);margin:8px 0 14px;line-height:1.6;">India digitised payments before healthcare using the same collect-first model.</div>
+<div style="color:#2AAFA8;font-size:15px;font-weight:700;margin-top:8px;line-height:1.5;padding:8px 12px;background:rgba(42,175,168,0.08);border-radius:8px;border-left:3px solid #2AAFA8;">→ Dhara uses the same collect-first model. Patient pays before pharmacy settles. Zero working capital cost.</div>
         <div style="background:rgba(42,175,168,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:34px;font-weight:800;color:var(--t);">83%</div><div style="font-size:15px;color:var(--mu);">digital payments via UPI · 70% outside Tier-1</div></div>
       </div>
       <div class="card-lt" style="border-top:4px solid var(--t);">
         <div style="font-size:32px;margin-bottom:10px;">🏛️</div>
         <div class="h4 tx">ABDM / DISHA</div>
-        <div style="font-size:19px;color:var(--mu);margin:8px 0 14px;line-height:1.6;">Dhara is ABDM-native from day one — not bolted on. Our data model has no institution-ownership layer. Consent tokens per patient, not per clinic. Competitors integrated ABHA on top of clinic-owned data. We built around the patient ID from scratch.</div>
+        <div style="font-size:19px;color:var(--mu);margin:8px 0 14px;line-height:1.6;">We penetrate clinics on product merit. ABDM alignment is an accelerant — we're ahead of adoption, not waiting for it.</div><div style="color:#2AAFA8;font-size:16px;font-weight:700;margin:8px 0 14px;line-height:1.5;padding:8px 12px;background:rgba(42,175,168,0.08);border-radius:8px;border-left:3px solid #2AAFA8;">→ Dhara is ABDM-native from day one — consent tokens per patient, not per institution. Competitors integrated ABHA on top of clinic-owned data. We built around the patient ID from scratch.</div>
         <div style="background:rgba(42,175,168,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:34px;font-weight:800;color:var(--t);">798M</div><div style="font-size:15px;color:var(--mu);">ABHAs created · 159,000 facilities on ABDM software</div></div>
       </div>
       <div class="card-lt" style="border-top:4px solid var(--t);">
         <div style="font-size:32px;margin-bottom:10px;">📱</div>
         <div class="h4 tx">Tier-2 SaaS Adoption</div>
-        <div style="font-size:19px;color:var(--mu);margin:8px 0 14px;line-height:1.6;">₹199/mo is the lowest barrier entry in the market. Vaani is immediate ROI for any doctor with 4+ minute consultations. The engagement model (CME, KOLs) replaces DSA reps — cost ₹4,500/clinic vs ₹25,000 traditional.</div>
+        <div style="font-size:19px;color:var(--mu);margin:8px 0 8px;line-height:1.6;">Independent clinics are finally adopting software. The distribution channel now exists for the first time.</div><div style="color:#2AAFA8;font-size:16px;font-weight:700;margin:0 0 14px;line-height:1.5;padding:8px 12px;background:rgba(42,175,168,0.08);border-radius:8px;border-left:3px solid #2AAFA8;">→ ₹199/mo lowest barrier. Vaani = immediate ROI for 4+ min consults. Engagement model: ₹4,500/clinic vs ₹25,000 DSA — 5.5× more efficient.</div>
         <div style="background:rgba(42,175,168,0.06);border-radius:10px;padding:12px 16px;"><div style="font-size:34px;font-weight:800;color:var(--t);">&lt;10%</div><div style="font-size:15px;color:var(--mu);">penetration today — land-grab window open now</div></div>
       </div>
     </div>
@@ -707,7 +738,7 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
     <div style="background:rgba(42,175,168,0.08);border:2px solid rgba(42,175,168,0.3);border-radius:16px;padding:18px 32px;display:flex;align-items:center;gap:48px;margin-bottom:16px;">
       <div style="font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--teal);min-width:80px;">LIVE TODAY</div>
       <div style="display:flex;gap:48px;flex-wrap:wrap;">
-        <div style="font-size:22px;color:var(--text);"><strong style="font-size:32px;color:var(--teal);">10</strong> clinics in beta pipeline</div>
+        <div style="font-size:22px;color:var(--text);"><strong style="font-size:32px;color:var(--teal);">25</strong> clinics in beta pipeline</div>
         <div style="font-size:22px;color:var(--text);"><strong style="font-size:32px;color:var(--teal);">1</strong> institutional lead (PGI Chandigarh)</div>
         <div style="font-size:22px;color:var(--text);"><strong style="font-size:32px;color:var(--teal);">Vaani</strong> live · ₹175/session model active</div>
         <div style="font-size:22px;color:var(--text);"><strong style="font-size:32px;color:var(--teal);">Setu</strong> demo build · 15-week plan</div>
@@ -788,53 +819,29 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
 </section>
 
 <!-- ══ S12 AI HORIZONS ════════════════════════════════ -->
-<section id="s13" data-label="AI Horizons">
-  <div class="nav"><div class="nav-lbl">AI Intelligence</div><div class="nav-conf">Confidential · May 2026</div></div>
-  <div class="bd" style="gap:18px;">
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;">
-      <div><div class="lbl">AI Intelligence</div><div class="h2" style="margin-top:6px;">The Four Horizons</div></div>
-      <div style="font-size:17px;color:rgba(255,255,255,0.25);text-align:right;max-width:420px;line-height:1.5;">The data captured today is the dataset that powers every horizon. No competitor can build this retrospectively.</div>
+<!-- ══════════════════════════════════
+     10 AI HORIZONS
+══════════════════════════════════ -->
+<section id="s13" class="dark" data-label="AI Horizons">
+  <div class="nav"><div class="nav-right">AI Intelligence</div></div>
+  <div class="body" style="display:flex;flex-direction:column;">
+    <div class="sec-hdr"><div><div class="slide-label">AI Intelligence</div><div style="font-family:var(--serif);font-size:56px;color:var(--white);margin-top:4px;">The Four Horizons</div></div><div style="font-size:18px;color:rgba(255,255,255,0.25);max-width:400px;text-align:right;">The data we capture today is the dataset that powers every horizon. No competitor can build this retrospectively.</div></div>
+    <div class="hgrid" id="hgrid">
+      <div class="hc on" onclick="event.stopPropagation();selectHorizon(0)"><div class="h-when">Today</div><div class="live-badge"><div class="ld"></div>Live in Beta</div><div class="h-ttl">Vaani — Speech-to-Text</div><div class="h-sub">Real-time transcription. ₹50/hr cost. 73.3% gross margin.</div></div>
+      <div class="hc" onclick="event.stopPropagation();selectHorizon(1)"><div class="h-when">Horizon 1 · M6–12</div><div style="height:8px;"></div><div class="h-ttl">Pre-Consultation Summary</div><div class="h-sub">Auto-surface full patient history before the consult.</div></div>
+      <div class="hc" onclick="event.stopPropagation();selectHorizon(2)"><div class="h-when">Horizon 2 · M12–18</div><div style="height:8px;"></div><div class="h-ttl">Pre-Visit Self-Assessment</div><div class="h-sub">AI questions before the visit. Doctor gets triage context.</div></div>
+      <div class="hc" onclick="event.stopPropagation();selectHorizon(3)"><div class="h-when">Horizon 3 · Year 2–3</div><div style="height:8px;"></div><div class="h-ttl">Precision Medicine</div><div class="h-sub">10K+ records → pattern recognition.</div></div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:18px;flex:1;" id="hgrid">
-      <div class="hc on" onclick="event.stopPropagation();selectHorizon(0)">
-        <div style="font-size:13px;letter-spacing:.1em;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:6px;">Today</div>
-        <div style="display:inline-flex;align-items:center;gap:7px;font-size:14px;font-weight:700;color:var(--t);margin-bottom:10px;"><span style="width:8px;height:8px;border-radius:50%;background:var(--t);animation:pulse3 2s infinite;flex-shrink:0;"></span>Live in Beta</div>
-        <div style="font-family:var(--sf);font-size:28px;color:var(--w);line-height:1.25;margin-bottom:10px;">Vaani — Speech-to-Text</div>
-        <div style="font-size:18px;color:rgba(255,255,255,0.38);line-height:1.55;">Real-time transcription. ₹50/hr cost. 73.3% gross margin.</div>
-      </div>
-      <div class="hc" onclick="event.stopPropagation();selectHorizon(1)">
-        <div style="font-size:13px;letter-spacing:.1em;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:6px;">Horizon 1 · M6–12</div>
-        <div style="height:22px;"></div>
-        <div style="font-family:var(--sf);font-size:28px;color:var(--w);line-height:1.25;margin-bottom:10px;">Pre-Consultation Summary</div>
-        <div style="font-size:18px;color:rgba(255,255,255,0.38);line-height:1.55;">Auto-surface full patient history before the consult begins.</div>
-      </div>
-      <div class="hc" onclick="event.stopPropagation();selectHorizon(2)">
-        <div style="font-size:13px;letter-spacing:.1em;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:6px;">Horizon 2 · M12–18</div>
-        <div style="height:22px;"></div>
-        <div style="font-family:var(--sf);font-size:28px;color:var(--w);line-height:1.25;margin-bottom:10px;">Pre-Visit Self-Assessment</div>
-        <div style="font-size:18px;color:rgba(255,255,255,0.38);line-height:1.55;">AI questions before the visit. Doctor gets triage context.</div>
-      </div>
-      <div class="hc" onclick="event.stopPropagation();selectHorizon(3)">
-        <div style="font-size:13px;letter-spacing:.1em;font-weight:700;color:rgba(255,255,255,0.35);text-transform:uppercase;margin-bottom:6px;">Horizon 3 · Year 2–3</div>
-        <div style="height:22px;"></div>
-        <div style="font-family:var(--sf);font-size:28px;color:var(--w);line-height:1.25;margin-bottom:10px;">Precision Medicine</div>
-        <div style="font-size:18px;color:rgba(255,255,255,0.38);line-height:1.55;">10K+ records → population-level intelligence. Cancer + Dialysis modules.</div>
-      </div>
+    <div id="h-detail" style="background:rgba(42,175,168,0.08);border:1.5px solid rgba(42,175,168,0.2);border-radius:16px;padding:24px 36px;margin-top:16px;min-height:80px;transition:all 0.3s;">
+      <div style="font-size:13px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal);margin-bottom:8px;" id="hd-tag">TODAY · LIVE IN BETA</div>
+      <div style="font-size:26px;font-weight:700;color:var(--white);margin-bottom:8px;" id="hd-title">Vaani — Speech-to-Text Documentation</div>
+      <div style="font-size:21px;color:rgba(255,255,255,0.55);line-height:1.6;" id="hd-body">Real-time AI transcription via Sarvam AI during the clinical consultation. Cost: ₹50/hr · Revenue: ₹46.9 GP · ₹140.6 Psych/session · Gross margin: 73.3%. The scribe that makes documentation effortless — and the wedge that gets every doctor through the door. Currently live in beta with 10 clinic pipeline.</div>
     </div>
-    <div id="h-detail" style="background:rgba(42,175,168,0.08);border:1.5px solid rgba(42,175,168,0.2);border-radius:16px;padding:24px 36px;min-height:90px;transition:all .3s;">
-      <div style="font-size:12px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--t);margin-bottom:8px;" id="hd-tag">TODAY · LIVE IN BETA</div>
-      <div style="font-size:26px;font-weight:700;color:var(--w);margin-bottom:8px;" id="hd-title">Vaani — Speech-to-Text Documentation</div>
-      <div style="font-size:20px;color:rgba(255,255,255,0.55);line-height:1.6;" id="hd-body">Real-time AI transcription via Sarvam AI. Cost ₹50/hr. GP session (15 min) = ₹46.875 revenue. Psych session (45 min) = ₹140.625 revenue. 73.3% gross margin. The scribe that makes documentation effortless — and the wedge that gets every doctor on the platform.</div>
-    </div>
-    <div style="padding:18px 28px;background:rgba(42,175,168,0.06);border:1px solid rgba(42,175,168,0.15);border-radius:12px;display:flex;align-items:flex-start;gap:14px;">
-      <div style="width:26px;height:26px;background:rgba(42,175,168,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:15px;">🔐</div>
-      <div style="font-size:18px;color:rgba(255,255,255,0.55);line-height:1.5;"><strong style="color:var(--w);">Doctor Approval Gate — Always On, By Architecture.</strong> Every AI output is a suggestion. Nothing saves without clinical sign-off. This is not compliance — it is the product.</div>
-    </div>
+    <div class="gate"><div style="width:28px;height:28px;background:rgba(42,175,168,0.15);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:16px;">🔐</div><div><strong>Doctor Approval Gate — Always On, By Architecture.</strong> Every AI output is a suggestion. Nothing saves without clinical sign-off. This is not compliance — it is the product.</div></div>
   </div>
   <div class="snav"><button class="snav-btn" onclick="event.stopPropagation();document.querySelector('deck-stage').prev()">← Prev</button><span class="snav-count">13 / 19</span><button class="snav-btn" onclick="event.stopPropagation();document.querySelector('deck-stage').next()">Next →</button></div>
 </section>
 
-<!-- ══ S13 COMPETITIVE ═══════════════════════════════ -->
 <section id="s14" data-label="Competitive">
   <div class="nav"><div class="nav-lbl">Competitive</div><div class="nav-conf">Confidential · May 2026</div></div>
   <div class="bd" style="gap:18px;">
@@ -1053,7 +1060,7 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
         </div>
         <div style="margin-top:12px;padding:10px 14px;background:rgba(42,175,168,0.08);border-radius:8px;font-size:17px;color:rgba(255,255,255,0.55);">Series A = <strong style="color:var(--t);">7-10× on seed entry.</strong> NSE Emerge with ADX/DFM secondary — exit in home market.</div>
       </div>
-      <div style="font-size:15px;color:rgba(255,255,255,0.2);text-align:right;">aditya@ayuvinc.com · +91-9599963641</div>
+      <div style="font-size:15px;color:rgba(255,255,255,0.2);text-align:right;"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f9989d908d8098b998808c8f90979ad79a9694">[email&#160;protected]</a> · +91-9599963641</div>
     </div>
   </div>
   <div class="snav"><button class="snav-btn" onclick="event.stopPropagation();document.querySelector('deck-stage').prev()">← Prev</button><span class="snav-count">18 / 19</span><button class="snav-btn" onclick="event.stopPropagation();document.querySelector('deck-stage').next()">Next →</button></div>
@@ -1126,7 +1133,7 @@ document.addEventListener('fullscreenchange',()=>{const b=document.getElementByI
 
 </deck-stage>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── Founder cinematic (s5) ────────────────────────────
 let founderIdx = 0;
 const founderBeats = document.querySelectorAll('#s5 .beat');
@@ -1332,7 +1339,7 @@ function applyPreset(name) {
   document.getElementById('sl-ai').value    = Math.max(1, ba.ai  + p.ai_adj);
   document.getElementById('sl-rx').value    = Math.max(1, ba.rx  + p.rx_adj);
   document.getElementById('sl-lab').value   = Math.max(1, ba.lab + p.lab_adj);
-  document.querySelectorAll('.preset-btn').forEach(b => b.classList.toggle('on', b.getAttribute('onclick').includes(name)));
+  document.querySelectorAll('#s19 .preset-btn').forEach(b => b.classList.toggle('on', b.getAttribute('onclick').includes(name)));
   runSim();
 }
 function simYear(y) {
@@ -1345,7 +1352,7 @@ function simYear(y) {
   document.getElementById('sl-ai').value    = ba.ai;
   document.getElementById('sl-rx').value    = ba.rx;
   document.getElementById('sl-lab').value   = ba.lab;
-  document.querySelectorAll('.preset-btn').forEach(b => b.classList.toggle('on', b.getAttribute('onclick').includes('base')));
+  document.querySelectorAll('#s19 .preset-btn').forEach(b => b.classList.toggle('on', b.getAttribute('onclick').includes('base')));
   runSim();
 }
 function fmtCr(n) {
@@ -1354,87 +1361,88 @@ function fmtCr(n) {
   if (abs >= 100000)   return sign + '₹' + Math.round(abs / 100000  * 10) / 10 + ' L';
   return sign + '₹' + Math.round(abs / 1000) + 'K';
 }
-function runSim() {
+function fmtUSD(inr){
+  const usd = inr / 90; // convert INR to USD
+  const abs = Math.abs(usd); const sign = usd < 0 ? '-' : '';
+  if (abs >= 1000000) return sign + 'USD ' + Math.round(abs / 100000) / 10 + 'M';
+  if (abs >= 1000)    return sign + 'USD ' + Math.round(abs / 1000) + 'K';
+  return sign + 'USD ' + Math.round(abs);
+}
+function runSim(){
   const clin    = +document.getElementById('sl-clin').value;
-  const psychPct= +document.getElementById('sl-psych').value / 100;
-  const pts     = +document.getElementById('sl-pts').value;  // patients/day slider
+  const psychPct= +document.getElementById('sl-psych').value/100;
+  const pts     = +document.getElementById('sl-pts').value;
   const aiA     = +document.getElementById('sl-ai').value;
   const rxA     = +document.getElementById('sl-rx').value;
   const labA    = +document.getElementById('sl-lab').value;
+
   document.getElementById('lbl-clin').textContent  = clin.toLocaleString('en-IN');
-  document.getElementById('lbl-psych').textContent = Math.round(psychPct * 100) + '%';
+  document.getElementById('lbl-psych').textContent = Math.round(psychPct*100)+'%';
   document.getElementById('lbl-pts').textContent   = pts;
-  document.getElementById('lbl-ai').textContent    = aiA + '%';
-  document.getElementById('lbl-rx').textContent    = rxA + '%';
-  document.getElementById('lbl-lab').textContent   = labA + '%';
+  document.getElementById('lbl-ai').textContent    = aiA+'%';
+  document.getElementById('lbl-rx').textContent    = rxA+'%';
+  document.getElementById('lbl-lab').textContent   = labA+'%';
 
-  // pts/day multiplier — base is 8 pts/day (model default)
-  const ptsMult = pts / 8;
-
+  // ── Locked model base ARPC (INR/clinic/yr at base case) ───────────────
+  // Derived from: Y1 ₹92.83L/300, Y2 ₹531.12L/1000, Y3 ₹2120.22L/5000
+  const BASE_ARPC = {1:30943, 2:53112, 3:42404};
+  const BASE_ADOPT = {1:{ai:11,rx:29,lab:29,pts:8},
+                      2:{ai:25,rx:50,lab:35,pts:8},
+                      3:{ai:25,rx:75,lab:50,pts:8}};
   const ba = BASE_ADOPT[simYr];
-  const aiMult  = aiA  / ba.ai;
-  const rxMult  = rxA  / ba.rx;
-  const labMult = labA / ba.lab;
 
-  const bm = BASE_MIX[simYr];
-  const psychN  = Math.round(clin * psychPct);
-  const psycholN= Math.round(clin * bm.psychol);
-  const otherN  = clin - psychN - psycholN;
+  // ── Revenue stream weights at base case ───────────────────────────────
+  // From locked model stream breakdown estimates:
+  const STREAM_SHARE = {
+    1:{emr:0.077,ai:0.37,rx:0.41,lab:0.143},
+    2:{emr:0.045,ai:0.35,rx:0.42,lab:0.185},
+    3:{emr:0.113,ai:0.175,rx:0.50,lab:0.212}
+  };
+  const ss = STREAM_SHARE[simYr];
+  const baseARPC = BASE_ARPC[simYr];
 
-  // Working days per month: 22
-  const DAYS = 22;
+  // ── Multipliers from sliders relative to base ─────────────────────────
+  const ptsMult  = pts / ba.pts;
+  const aiMult   = aiA  / ba.ai;
+  const rxMult   = rxA  / ba.rx;
+  const labMult  = labA / ba.lab;
 
-  // EMR: flat subscription, not affected by pts/day
-  const emr = clin * 199 * 12;
+  // ── Revenue per stream ─────────────────────────────────────────────────
+  // EMR: flat, not affected by adoption or pts
+  const emrARPC  = baseARPC * ss.emr;
+  // Variable streams: scale with their respective multiplier AND pts/day
+  const aiARPC   = baseARPC * ss.ai  * aiMult  * ptsMult;
+  const rxARPC   = baseARPC * ss.rx  * rxMult  * ptsMult;
+  const labARPC  = baseARPC * ss.lab * labMult * ptsMult;
 
-  // Vaani (AI scribe): sessions = pts × attach% × days × 12 months
-  // GP: 15-min session = ₹46.875; Psych: 45-min = ₹140.625
-  const gpVaaniSessions   = otherN  * pts * (1 - psychPct) * (aiA/100) * DAYS * 12 * ptsMult;
-  const psychVaaniSessions= psychN  * Math.min(pts * 0.5, 4) * (aiA/100) * DAYS * 12; // psych max 4/day
-  const ai = gpVaaniSessions * 46.875 + psychVaaniSessions * 140.625;
+  const arpc  = emrARPC + aiARPC + rxARPC + labARPC;
+  const emr   = clin * emrARPC;
+  const ai    = clin * aiARPC;
+  const rx    = clin * rxARPC;
+  const lab   = clin * labARPC;
+  const total = clin * arpc;
 
-  // Pharmacy: per-prescription revenue
-  // All patients get Rx, capture rate = rxA%
-  const rxPerYear = clin * pts * DAYS * 12 * (rxA/100) * ptsMult;
-  const rx = rxPerYear * 31; // ₹31 blended
-
-  // Pathology: 30% of patients get lab referral, capture rate = labA%
-  const labPerYear = clin * pts * DAYS * 12 * 0.30 * (labA/100) * ptsMult;
-  const lab = labPerYear * 71; // ₹71 blended
-
-  const total = emr + ai + rx + lab;
-
-  // Cost model — base OPEX from locked model, AI COGS variable
-  const annualOpexBase = { 1: 33720000, 2: 53078000, 3: 97451000 };
-  const aiCOGS = ai * 0.267; // 73.3% margin → COGS = 26.7%
+  // ── Cost model (from locked model) ────────────────────────────────────
+  const annualOpexBase = {1:33720000, 2:53078000, 3:97451000};
+  const aiCOGS   = ai * 0.267;
   const annualOpex = annualOpexBase[simYr] + aiCOGS;
-  const ebitda = total - annualOpex;
-  const gm = total > 0 ? ((total - aiCOGS) / total * 100) : 0;
-  const arpc = clin > 0 ? total / clin : 0;
+  const ebitda   = total - annualOpex;
+  const gm       = total > 0 ? ((total - aiCOGS) / total * 100) : 0;
   const monthlyBurn = annualOpex / 12;
+  const maxS     = Math.max(emr, ai, rx, lab, 1);
 
-  const maxS = Math.max(emr, ai, rx, lab, 1);
-  document.getElementById('sim-arr').textContent     = fmtCr(total);
-  document.getElementById('sim-arr-sub').textContent = clin.toLocaleString('en-IN') + ' clinicians · ' + pts + ' pts/day · ' + Math.round(psychPct * 100) + '% psych';
-  document.getElementById('sim-val').textContent     = fmtCr(total * 6);
-  document.getElementById('sim-gm').textContent      = gm.toFixed(1) + '%';
-  document.getElementById('sim-burn').textContent    = fmtCr(monthlyBurn) + '/mo';
-  document.getElementById('sim-arpc').textContent    = fmtCr(arpc);
-  document.getElementById('sim-arpc-usd').textContent= 'USD ' + Math.round(arpc / 90).toLocaleString('en-IN');
-  const eEl = document.getElementById('sim-ebitda');
-  eEl.textContent = (ebitda >= 0 ? 'EBITDA positive: ' : 'EBITDA: ') + fmtCr(ebitda);
-  eEl.className = ebitda >= 0 ? 'epos' : 'eneg';
-
-  function sb(bid, vid, v) {
-    const bar = document.getElementById(bid);
-    const val = document.getElementById(vid);
-    if (bar) bar.style.width = Math.max(2, v / maxS * 100) + '%';
-    if (val) val.textContent = fmtCr(v);
-  }
-  sb('sbar-emr','sval-emr', emr);
-  sb('sbar-ai', 'sval-ai',  ai);
-  sb('sbar-rx', 'sval-rx',  rx);
-  sb('sbar-lab','sval-lab', lab);
+  // ── Display ───────────────────────────────────────────────────────────
+  document.getElementById('sim-arr').textContent     = fmtUSD(total);
+  document.getElementById('sim-arr-sub').textContent = clin.toLocaleString('en-IN')+' clinicians · '+pts+' pts/day · '+Math.round(psychPct*100)+'% psych';
+  document.getElementById('sim-val').textContent     = fmtUSD(total*6);
+  const simGm=document.getElementById('sim-gm');if(simGm)simGm.textContent=gm.toFixed(1)+'%';
+  const simBurn=document.getElementById('sim-burn');if(simBurn)simBurn.textContent=fmtUSD(monthlyBurn)+'/mo';
+  const simArpc=document.getElementById('sim-arpc');if(simArpc)simArpc.textContent=fmtCr(arpc);
+  const simArpcUsd=document.getElementById('sim-arpc-usd');if(simArpcUsd)simArpcUsd.textContent='USD '+Math.round(arpc/90).toLocaleString('en-IN');
+  const eEl=document.getElementById('sim-ebitda');
+  if(eEl){eEl.textContent=(ebitda>=0?'EBITDA positive: ':'EBITDA: ')+fmtUSD(ebitda);eEl.className=ebitda>=0?'epos':'eneg';}
+  function sb(bid,vid,v){const b=document.getElementById(bid);const vl=document.getElementById(vid);if(b)b.style.width=Math.max(2,v/maxS*100)+'%';if(vl)vl.textContent=fmtUSD(v);}
+  sb('sbar-emr','sval-emr',emr);sb('sbar-ai','sval-ai',ai);sb('sbar-rx','sval-rx',rx);sb('sbar-lab','sval-lab',lab);
 }
 
 // ── Slide change events ──────────────────────────────
